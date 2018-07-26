@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Movies and TV Series Search</title>
+        <meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/main.js"></script>
+	</head>
+	<body>
+		<div id="container">
+
+   			<!-- Search area -->
+			<form id="search_form">
+				<input type="text" id="search_term" />
+				<select name="source" id="source">
+					<option value="1">All</option>
+	                <option value="2">Movies</option>
+	                <option value="3">Episodes</option>
+	                <option value="4">Series</option>
+				</select>
+				<input type="submit" value="Search" />
+			</form>
+
+			<!-- Results area -->
+			<div id="results_area">
+				<div id="results_title"></div>
+				<table id="results_table">
+				</table>
+			</div>
+
+			<!-- Pagination -->
+			<div id="pagination"></div>
+
+			<!-- Detail area -->
+			<div id="detail_area">
+				<div id="detail_information">
+					<div class="detail_heading">
+						<div id="detail_title" class="detail_important"></div>
+						<div id="detail_score"></div>
+					</div>
+					<ul id="detail_features"></ul>
+					<div id="detail_description"></div>
+					<div id="detail_message"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
